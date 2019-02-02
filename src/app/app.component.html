@@ -16,14 +16,14 @@
             <div class='row'>
               <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>
                 <div class="form-group">
-                  <label class="control-label" for="email" style="font-size:18px">Email:</label>
+                  <label class="control-label" for="email" style="font-size:18px">Your Email:</label>
                   <input class="form-control input-md" style="font-size:18px" #email="ngModel" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
                     id="email" name="email" type="text" placeholder="Email" [(ngModel)]="personal.email">
                 </div>
 
                 <div class="form-group text-center">
                   <button class="btn btn-success btn-outline-rounded btn-info" [disabled]="!personalForm.valid" (click)="setAfterEmail()">
-                    Submit <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+                    Let's get started! <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
                 </div>
               </div>
             </div>

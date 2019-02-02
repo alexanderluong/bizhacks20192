@@ -39,7 +39,7 @@ export class ResultComponent implements OnInit {
         })
 
         if(this.countUnknown < 3) {
-            this.msg = "Here is a list of laptops that fit your daily needs:"
+            this.msg = "Here is a list of laptops that fit you:"
             this.filterProducts();
         } else {
             this.msg = "Please contact our customer service representative on site for more assistance. For more information, please contact us at 1-800-BEST-BUY."
