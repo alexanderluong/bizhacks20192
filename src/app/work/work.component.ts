@@ -1,18 +1,18 @@
-import { Component, OnInit }   from '@angular/core';
-import { Router }              from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
-import { FormDataService }     from '../data/formData.service';
+import { FormDataService } from '../data/formData.service';
 
-@Component ({
-    selector:     'mt-wizard-work'
-    ,templateUrl: './work.component.html'
+@Component({
+    selector: 'mt-wizard-work'
+    , templateUrl: './work.component.html'
 })
 
 export class WorkComponent implements OnInit {
-    title = 'What do you do?';
+    title = 'What will you be using your laptop for?';
     workType: string;
     form: any;
-    
+
     constructor(private router: Router, private formDataService: FormDataService) {
     }
 
@@ -25,7 +25,7 @@ export class WorkComponent implements OnInit {
         if (!form.valid) {
             return false;
         }
-        
+
         this.formDataService.setWork(this.workType);
         return true;
     }

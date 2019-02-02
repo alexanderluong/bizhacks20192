@@ -6,26 +6,20 @@
       <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>
         <div class="radio">
           <label>
-            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="personal.budget" value="300">
-            Less than $300
+            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="storage" value="Yes">
+            Yes
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="personal.budget" value="799">
-            $300 - $799
+            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="storage" value="No">
+            No
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="personal.budget" value="1499">
-            $800 - $1499
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="personal.budget" value="9999">
-            Unlimited
+            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="storage" value="0">
+            I don't know
           </label>
         </div>
 

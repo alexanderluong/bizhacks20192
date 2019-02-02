@@ -10,7 +10,7 @@ import { FormDataService }     from '../data/formData.service';
 })
 
 export class AddressComponent implements OnInit {
-    title = 'Where do you live?';
+    title = 'Do you need a touch screen?';
     address: Address;
     form: any;
     
@@ -41,7 +41,7 @@ export class AddressComponent implements OnInit {
     goToNext(form: any) {
         if (this.save(form)) {
             // Navigate to the result page
-            this.router.navigate(['/result']);
+            this.router.navigate(['/screen']);
         }
     }
 }

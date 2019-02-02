@@ -6,29 +6,22 @@
       <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>
         <div class="radio">
           <label>
-            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="personal.budget" value="300">
-            Less than $300
+            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="battery" value="7">
+            Less than 8 hours
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="personal.budget" value="799">
-            $300 - $799
+            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="battery" value="99">
+            More than 8 hours
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="personal.budget" value="1499">
-            $800 - $1499
+            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="battery" value="0">
+            I don't know
           </label>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" #work="ngModel" required name="work" [(ngModel)]="personal.budget" value="9999">
-            Unlimited
-          </label>
-        </div>
-
         <div class="form-group text-center">
           <button class="btn btn-success btn-outline-rounded btn-info" [disabled]="!personalForm.valid" (click)="goToNext(personalForm)">
             Next <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>

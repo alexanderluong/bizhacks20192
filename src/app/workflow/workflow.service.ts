@@ -8,7 +8,10 @@ export class WorkflowService {
         { step: STEPS.personal, valid: false },
         { step: STEPS.work, valid: false },
         { step: STEPS.address, valid: false },
-        { step: STEPS.result, valid: false }
+        { step: STEPS.screen, valid: false },
+        { step: STEPS.storage, valid: false},
+        { step: STEPS.battery, valid: false},
+        { step: STEPS.result, valid: false },
     ];
     
     validateStep(step: string) {

@@ -1,34 +1,25 @@
 export class FormData {
-    firstName: string = '';
-    lastName : string = '';
-    email: string = '';
+    budget: string = '';
     work: string = '';
-    street: string = '';
-    city: string = '';
-    state: string = '';
-    zip: string = '';
+    touchscreen: string = '';
+    screen: string = '';
+    storage: string = '';
+    battery: string = '';
 
     clear() {
-        this.firstName = '';
-        this.lastName = '';
-        this.email = '';
+        this.budget = '';
         this.work = '';
-        this.street = '';
-        this.city = '';
-        this.state = '';
-        this.zip = '';
+        this.touchscreen = '';
+        this.screen = '';
+        this.storage = '';
+        this.battery = '';
     }
 }
 
 export class Personal {
-    firstName: string = '';
-    lastName : string = '';
-    email: string = '';
+    budget: string = '';
 }
 
 export class Address {
-    street: string = '';
-    city: string = '';
-    state: string = '';
-    zip: string = '';
+    touchscreen: string = '';
 }
