@@ -1,9 +1,9 @@
-ul{
-    padding-top: 20px;
+ul {
+  padding-top: 20px;
 }
 
 .btn-default {
-    border-color: #ccc;
+  border-color: #ccc;
 }
 
 .tab-content .choice {
@@ -13,69 +13,91 @@ ul{
 }
 
 .tab-content .choice i {
-    font-size: 32px;
-    line-height: 55px;
+  font-size: 32px;
+  line-height: 55px;
 }
 
-.descriptionSkill{
- padding-top: 40%;
- line-height: 2rem;
+.descriptionSkill {
+  padding-top: 40%;
+  line-height: 2rem;
 }
+
 /* .shadowBox{
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
  } */
 
 .btn-radio {
-	width: 100%;
+  width: 100%;
 }
+
 .img-radio {
-	opacity: 0.8;
-	margin-bottom: 5px;
+  opacity: 0.8;
+  margin-bottom: 5px;
 }
 
 .space-20 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* active buttons */
-#status-buttons a.active span.round-tabs.one { 
-    background: rgb(34, 194, 34); 
-    color: #fff
+#status-buttons a.active span.round-tabs.one {
+  background: rgb(34, 194, 34);
+  color: #fff
 }
 
-#status-buttons a.active span.round-tabs.two { 
-    background: #febe29; 
-    color: #fff
+#status-buttons a.active span.round-tabs.two {
+  background: #febe29;
+  color: #fff
 }
 
-#status-buttons a.active span.round-tabs.three { 
-    background: #3e5e9a; 
-    color: #fff
+#status-buttons a.active span.round-tabs.three {
+  background: #3e5e9a;
+  color: #fff
 }
 
-#status-buttons a.active span.round-tabs.four { 
-    background: #f1685e; 
-    color: #fff
+#status-buttons a.active span.round-tabs.four {
+  background: #f1685e;
+  color: #fff
 }
 
+ul {
+  list-style-type: none;
+}
+
+.bigfont {
+  font-size: 40px;
+}
+
+.radio-container {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 11px;
+  padding: 10px;
+  margin: 3%;
+  font-size: 20px;
+  border-color: lightgrey;
+}
 
 .iradio_buttons {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    width: 22px;
-    height: 22px;
-    background: #febe29 no-repeat;
-    border: none;
-    cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  background: #febe29 no-repeat;
+  border: none;
+  cursor: pointer;
 }
+
 .iradio_buttons {
-    background-position: -120px 0;
+  background-position: -120px 0;
 }
+
 .iradio_buttons.hover {
-    background-position: -144px 0;
+  background-position: -144px 0;
 }
+
 .iradio_buttons.checked {
-    background-position: -168px 0;
+  background-position: -168px 0;
 }

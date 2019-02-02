@@ -84,7 +84,7 @@ export class ResultComponent implements OnInit {
                     // console.log(price);
                     // if (!flag) {
                         console.log(spec.overview.specifications);
-                        if (this.filterProducts.length < 3) {
+                        if (this.filteredProducts.length < 3) {
                             this.filteredProducts.push(spec);
                         }
                     // }
