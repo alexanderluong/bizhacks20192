@@ -3,6 +3,13 @@
   <p class="narrow text-center">
     Here is a copy of the information you have entered:
   </p>
+
+  <ul *ngIf = "filteredProducts">
+    <li *ngFor = "let prod of filteredProducts">
+      <img [src] = "prod.overview.media.primaryImage.thumbnailUrl">
+      <p>{{prod.overview.names.short}}</p>
+    </li>
+  </ul>
   <div class='row'>
     <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-8'>
       <div class="row">
