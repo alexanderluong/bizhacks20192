@@ -23,13 +23,27 @@ export class ResultComponent implements OnInit {
     title = 'Thanks for waiting!';
     @Input() formData: FormData;
     isFormValid: boolean = false;
+    msg = '';
+    countUnknown = 0;
 
     constructor(private formDataService: FormDataService, private data: DataService) { }
     filteredProducts: any = [];
     ngOnInit() {
         this.formData = this.formDataService.getFormData();
         this.isFormValid = this.formDataService.isFormValid();
-        this.filterProducts();
+        
+        Object.keys(this.formData).forEach((item : any) => {
+            if (this.formData[item] == "0"){
+                this.countUnknown + 1
+            }
+        })
+
+        if(this.countUnknown > 3) {
+            this.msg = "Here is a list of laptops that fit your daily needs:"
+            this.filterProducts();
+        } else {
+            this.msg = "Please contact our customer service representative on site for more assistance. For more information, please contact us at 1-800-BEST-BUY."
+        }
     }
 
     filterProducts() {
