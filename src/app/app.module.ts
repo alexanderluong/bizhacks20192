@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 /* App Root */
 import { AppComponent } from './app.component';
@@ -21,11 +22,13 @@ import { WorkflowService } from './workflow/workflow.service';
 import { ScreenComponent } from './screen/screen.component';
 import { StorageComponent } from './storage/storage.component';
 import { BatteryComponent } from './battery/battery.component';
+import { DataService } from './data.service';
 
 @NgModule({
     imports: [BrowserModule,
         FormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpModule
     ],
     providers: [{ provide: FormDataService, useClass: FormDataService },
     { provide: WorkflowService, useClass: WorkflowService }],
