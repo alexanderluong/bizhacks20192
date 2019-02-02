@@ -38,7 +38,7 @@ export class ResultComponent implements OnInit {
             }
         })
 
-        if(this.countUnknown > 3) {
+        if(this.countUnknown < 3) {
             this.msg = "Here is a list of laptops that fit your daily needs:"
             this.filterProducts();
         } else {
