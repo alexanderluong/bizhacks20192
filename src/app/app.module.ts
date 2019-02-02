@@ -23,6 +23,7 @@ import { ScreenComponent } from './screen/screen.component';
 import { StorageComponent } from './storage/storage.component';
 import { BatteryComponent } from './battery/battery.component';
 import { DataService } from './data.service';
+import { EmailComponent } from './email/email.component';
 
 @NgModule({
     imports: [BrowserModule,
@@ -32,7 +33,7 @@ import { DataService } from './data.service';
     ],
     providers: [{ provide: FormDataService, useClass: FormDataService },
     { provide: WorkflowService, useClass: WorkflowService }],
-    declarations: [AppComponent, NavbarComponent, PersonalComponent, WorkComponent, AddressComponent, ResultComponent, ScreenComponent, StorageComponent, BatteryComponent],
+    declarations: [AppComponent, NavbarComponent, PersonalComponent, WorkComponent, AddressComponent, ResultComponent, ScreenComponent, StorageComponent, BatteryComponent, EmailComponent],
     bootstrap: [AppComponent]
 })
 

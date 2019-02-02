@@ -40,7 +40,7 @@ export class ResultComponent implements OnInit {
             products.forEach(prod => {
                 let skuId = prod.skuId
                 this.data.filterProduct(skuId).map((response) => response.json()
-                ).subscribe((spec: any) => {
+                ).subscribe(async (spec: any) => {
                     // if (this.fitsNeeds(spec) === true) {
                     //     this.filteredProducts.push(spec);
                     // }
@@ -83,14 +83,19 @@ export class ResultComponent implements OnInit {
                     // console.log(prod);
                     // console.log(price);
                     // if (!flag) {
-                        console.log(spec.overview.specifications);
-                        if (this.filteredProducts.length < 3) {
-                            this.filteredProducts.push(spec);
-                        }
+                    console.log(spec.overview.specifications);
+                    if (this.filteredProducts.length < 3) {
+                        this.filteredProducts.push(spec);
+                    }
+                        await this.pushFilteredComponents(this.filteredProducts);
                     // }
                 });
             });
         });
+    }
+
+    pushFilteredComponents(products: any) {
+        console.log("pushFilteredComponents: " + products);
     }
 
     fitsNeeds(spec: any) {
