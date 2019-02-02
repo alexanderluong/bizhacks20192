@@ -15,7 +15,7 @@ import { BatteryComponent } from './battery/battery.component';
 
 export const appRoutes: Routes = [
   // 1st Route
-  { path: 'personal', component: PersonalComponent },
+  { path: '', component: PersonalComponent },
   // 2nd Route
   { path: 'work', component: WorkComponent, canActivate: [WorkflowGuard] },
   // 3rd Route
