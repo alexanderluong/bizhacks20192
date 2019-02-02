@@ -36,6 +36,7 @@ export class ResultComponent implements OnInit {
                 let skuId = prod.skuId 
                 this.data.filterProduct(skuId).map((response) => response.json()
                 ).subscribe((spec: any) => {
+                    console.log(spec);
                     if(this.fitsNeeds(spec) === true) {
                         this.filteredProducts.push(spec);
                     }

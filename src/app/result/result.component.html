@@ -3,11 +3,34 @@
   <p class="narrow text-center">
     Here is a list of laptops that fit your daily needs:
   </p>
+  <!-- <div class="card" style="width: 18rem;">
+      <img class="card-img-top" [src]="prod.overview.media.primaryImage.url" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{prod.overview.names.short}}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div> -->
+
 
   <ul *ngIf = "filteredProducts">
     <li *ngFor = "let prod of filteredProducts">
-      <img [src] = "prod.overview.media.primaryImage.thumbnailUrl">
-      <p>{{prod.overview.names.short}}</p>
+      <!-- <img [src] = "prod.overview.media.primaryImage.thumbnailUrl">
+      <p>{{prod.overview.names.short}}</p> -->
+
+      <div class="row skill">
+          <div class="col-md-4 col-sm-push-5">
+            <a href="" target="_blank">
+                <img class="" [src]="prod.overview.media.primaryImage.url"  alt="">
+            </a>
+          </div>
+          <div class="col-md-5 col-md-pull-5">
+            <div class="descriptionSkill">
+              <h3  >{{prod.overview.names.short}}</h3>
+            </div>
+          </div>
+        </div>
+
     </li>
   </ul>
   <div class="text-center">
