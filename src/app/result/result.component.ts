@@ -34,9 +34,9 @@ export class ResultComponent implements OnInit {
         
         Object.keys(this.formData).forEach((item : any) => {
             if (this.formData[item] == "0"){
-                this.countUnknown + 1
+                this.countUnknown += 1;
             }
-        })
+        });
 
         if(this.countUnknown < 3) {
             this.msg = "Here is a list of laptops that fit you:"
@@ -139,7 +139,7 @@ export class ResultComponent implements OnInit {
     submit() {
         // alert('Excellent Job!');
         console.log(this.formData);
-        window.location.replace('/');
+        window.location.replace('');
 
 
         this.formData = this.formDataService.resetFormData();

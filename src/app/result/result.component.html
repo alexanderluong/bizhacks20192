@@ -28,15 +28,14 @@
             <div class="descriptionSkill">
               <h3  >{{prod.overview.names.short}}</h3>
               <p>$ {{prod.overview.priceBlock.itemPrice.currentPrice}}</p>
-              <!-- <h2>{{spec.overview.priceBlock.itemPrice.currentPrice}}</h2> -->
-            </div>
+              <a href={{prod.overview.url}}><button class="btn btn-success btn-sm buyNow">Buy Now</button></a>            </div>
           </div>
         </div>
 
     </li>
   </ul>
   <div class="text-center">
-    <button class="btn btn-success btn-outline-rounded" [disabled]="!isFormValid" (click)="submit()"> Done <span
+    <button class="btn btn-success btn-outline-rounded" [disabled]="!isFormValid" (click)="submit()"> See You Next Time<span
         style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
   </div>
 </div>
