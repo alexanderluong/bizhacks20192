@@ -49,9 +49,15 @@ export class ResultComponent implements OnInit {
   }
 
   filterProducts() {
+    let searchMe;
+    this.data.Search("2").map((response) => response.json()).subscribe((data: any)=> {
+        searchMe= data.searchApi.documents
+    })
     console.log("filtering");
-    this.data.Search().map((response) => response.json()).subscribe((data: any) => {
+    this.data.Search("1").map((response) => response.json()).subscribe((data: any) => {
       let products = data.searchApi.documents;
+      products = products.concat(searchMe);
+      console.log("p", products);
       products.forEach(prod => {
         let skuId = prod.skuId
         this.data.filterProduct(skuId).map((response) => response.json()).subscribe(async (spec: any) => {
