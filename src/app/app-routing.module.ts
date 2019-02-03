@@ -11,6 +11,7 @@ import { WorkflowGuard } from './workflow/workflow-guard.service';
 import { WorkflowService } from './workflow/workflow.service';
 import { StorageComponent } from './storage/storage.component';
 import { BatteryComponent } from './battery/battery.component';
+import { CustomerserviceComponent } from './customerservice/customerservice.component';
 
 
 export const appRoutes: Routes = [

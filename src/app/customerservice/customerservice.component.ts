@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Personal } from '../data/formData.model';
 import { FormDataService } from '../data/formData.service';
 
 @Component({

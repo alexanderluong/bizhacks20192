@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class EmailComponent implements OnInit {
-
+  title: 'hi';
   constructor() { }
 
   ngOnInit() {
